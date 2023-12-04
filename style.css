@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    
+}
+
+.logo span{
+    color: #008B8B;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background-color: #008B8B;
+    margin-top: -10px;
+    text-transform: uppercase;
+    border: 1px solid #ff7675;
+    border-radius: 10px;
+}
+
+.btn-reserve:hover{
+    background-color:#008B8B;
+    transition: ease-in-out;
+}
+
+header .navbar li a:hover{
+    color: #008B8B;
+    border-bottom: 2px solid #008B8B;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/bg.jpg") ;
+    background-size: cover;
+}
+
+.banniere p:nth-child(2){
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+
+.banniere h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+
+
+
+/* Mes Bouton */
+
+.bouton{
+    max-width: 70%;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    color: #008B8B;
+    font-size: 1.2em;
+    font-family: 'poppins', 'sans serif';
+    text-decoration: none;
+    padding: 14px 60px;
+    margin: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px solid #ff7675;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn::before{
+    background-color:  #008B8B;
+    content: "";
+    position: absolute;
+    color: #fff;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before{
+    transform: scaleX(0);
+}
+
+.btn2::before{
+    transform: scaleY(0);
+}
+
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.btn2:hover::before{
+    transform: scaleY(1);
+}
+
+
+
+
+
+
+/* Apropos de nous */
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.titre-text{
+    color: #008B8B;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #008B8B;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+
+
+/* Les Plats du Menu */
+
+.menu .titre-menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    margin-top: -100px;
+}
+
+.menu .menu-contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .menu-contenu .box{
+    width: 350px;
+    margin: 10px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.menu .menu-contenu .box .img-box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .menu-contenu .img-box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu .menu-contenu .img-titre, h3{
+    text-align: center;
+    font-weight: normal;
+
+}
+
+
+.equipe{
+    margin-top: -100px;
+
+}
+
+.equipe .menu-contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+.equipe .menu-contenu .box{
+    width: 250px;
+    height: 15px;
+    margin: 15px;
+}
+
+
+.equipe .menu-contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+
+.equipe .menu-contenu .box h3{
+    color: #111;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+
+
+.livreur{
+    background-image: url();
+    background-size: cover;
+    margin-top: 20em;
+}
+
+.livreur .livreur-contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.livreur .livreur-contenu .box{
+    width: 340px;
+    margin: 20px;
+    background: #cfc9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.livreur .livreur-contenu .box .img-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.livreur .livreur-contenu .box .img-box img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.livreur .livreur-contenu .box .img-titre{
+    text-align: center;
+    /* color: #fff; */
+
+}
